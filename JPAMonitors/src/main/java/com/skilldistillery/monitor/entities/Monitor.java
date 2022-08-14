@@ -11,23 +11,23 @@ public class Monitor {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 	
 	private String make;
 	
 	private String model;
 	
 	@Column(name="screen_size")
-	private int screenSize;
+	private Integer screenSize;
 
 	public Monitor() {
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -47,11 +47,11 @@ public class Monitor {
 		this.model = model;
 	}
 	
-	public int getScreenSize() {
+	public Integer getScreenSize() {
 		return screenSize;
 	}
 
-	public void setScreenSize(int screenSize) {
+	public void setScreenSize(Integer screenSize) {
 		this.screenSize = screenSize;
 	}
 

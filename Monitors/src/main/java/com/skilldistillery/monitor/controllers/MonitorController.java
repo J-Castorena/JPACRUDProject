@@ -37,4 +37,11 @@ public class MonitorController {
 		return "index";
 	}
 	
+	@RequestMapping(path="deleteMonitor.do")
+	public String deleteMonitor(Integer monitorId, Model model) {
+		dao.deleteMonitor(monitorId);
+		List<Monitor> monitors = dao.findAll();
+		model.addAttribute("monitors", monitors);
+		return "index";
+	}
 }

@@ -7,7 +7,8 @@ import com.skilldistillery.monitor.entities.Monitor;
 public interface MonitorDAO {
 	Monitor findById(int monitorId);
 	List<Monitor> findAll();
-	boolean deleteMonitor(int monitorId);
+	boolean deleteMonitor(Integer monitorId);
 	Monitor createMonitor(Monitor monitor);
+	
 	
 }

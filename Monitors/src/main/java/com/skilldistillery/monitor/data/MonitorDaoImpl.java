@@ -32,7 +32,7 @@ public class MonitorDaoImpl implements MonitorDAO{
 	}
 	
 	@Override
-	public boolean deleteMonitor(int monitorId) {
+	public boolean deleteMonitor(Integer monitorId) {
 		Monitor monitorToDelete = em.find(Monitor.class, monitorId);
 		if (monitorToDelete != null) {
 			em.remove(monitorToDelete);

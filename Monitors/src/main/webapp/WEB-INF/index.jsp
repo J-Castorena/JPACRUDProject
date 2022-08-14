@@ -43,7 +43,7 @@ ${Samsung}
 					
 					<td>${monitor.screenSize}</td>
 					
-					<td><a href="deleteMonitor.do?monitorid=${monitor.id}" type="button" class="btn btn-outline-danger btn-sm">x</a></td>
+					<td><a href="deleteMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-outline-danger btn-sm">x</a></td>
 					
 				</tr>
 				
