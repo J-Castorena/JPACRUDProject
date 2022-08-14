@@ -3,3 +3,12 @@
 body {
 	background-color: darksalmon;
 }
+
+h1 {
+	font-family: cursive;
+}
+
+.navbar navbar-light bg-dark {
+	display: flex;
+	justify-content: right;
+}

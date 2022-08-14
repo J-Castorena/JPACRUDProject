@@ -47,6 +47,19 @@ public class MonitorDaoImpl implements MonitorDAO{
 		em.flush();
 		return monitor;
 	}
+
+	@Override
+	public Monitor editMonitor(Monitor monitor) {
+		Monitor monitorToEdit = em.find(Monitor.class, monitor.getId());
+		if(monitorToEdit != null) {
+			monitorToEdit.setMake(monitor.getMake());
+			monitorToEdit.setModel(monitor.getModel());
+			monitorToEdit.setScreenSize(monitor.getScreenSize());
+			
+		}
+		return monitorToEdit;
+	}
+	
 	
 	
 }

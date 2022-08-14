@@ -9,6 +9,6 @@ public interface MonitorDAO {
 	List<Monitor> findAll();
 	boolean deleteMonitor(Integer monitorId);
 	Monitor createMonitor(Monitor monitor);
-	
+	Monitor editMonitor(Monitor monitor);
 	
 }

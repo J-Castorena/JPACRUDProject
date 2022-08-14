@@ -5,17 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Monitor Specs</title>
+<title>Home Page</title>
 <!-- CSS only -->
 <jsp:include page="bootstrapHead.jsp"/>
 <jsp:include page="navbar.jsp"/>
 </head>
 <body>
 <main class="container-fluid">
-<h1>FINALLY!!!!!!!!!!!!!!</h1>
-
-${Samsung}
-
 
 
 <c:choose>
@@ -29,6 +25,7 @@ ${Samsung}
 					<th>Model</th>
 					<th>Screen Size</th>
 					<th>Delete</th>
+					<th>Edit</th>
 				</tr>
 			</thead>
 			
@@ -44,6 +41,7 @@ ${Samsung}
 					<td>${monitor.screenSize}</td>
 					
 					<td><a href="deleteMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-outline-danger btn-sm">x</a></td>
+					<td><a href="editMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-outline-dark btn-sm">Edit</a></td>
 					
 				</tr>
 				
@@ -59,7 +57,7 @@ ${Samsung}
 		<h3>No Monitor Found</h3>
 	</c:otherwise>
 </c:choose>
-
+<br>
 
 <a href="createMonitor.do" type="button" class="btn btn-secondary">CREATE MONITOR</a>
 

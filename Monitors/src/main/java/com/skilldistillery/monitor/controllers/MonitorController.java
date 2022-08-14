@@ -44,4 +44,20 @@ public class MonitorController {
 		model.addAttribute("monitors", monitors);
 		return "index";
 	}
+	
+	
+	@RequestMapping(path="editMonitor.do")
+	public String editMonitor(Model model, Integer monitorId) {
+		Monitor monitor = dao.findById(monitorId);
+		model.addAttribute("monitor", monitor);
+		return "editMonitor";
+	}
+	
+	@RequestMapping(path="submitEditMonitorForm.do")
+	public String submitEditMonitor(Monitor monitor, Model model) {
+		monitor = dao.editMonitor(monitor);
+		List<Monitor> monitors = dao.findAll();
+		model.addAttribute("monitors", monitors);
+		return "index";
+	}
 }
