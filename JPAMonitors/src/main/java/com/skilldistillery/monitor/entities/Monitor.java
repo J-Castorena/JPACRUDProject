@@ -1,5 +1,6 @@
 package com.skilldistillery.monitor.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,6 +16,9 @@ public class Monitor {
 	private String make;
 	
 	private String model;
+	
+	@Column(name="screen_size")
+	private int screenSize;
 
 	public Monitor() {
 	}
@@ -42,10 +46,18 @@ public class Monitor {
 	public void setModel(String model) {
 		this.model = model;
 	}
+	
+	public int getScreenSize() {
+		return screenSize;
+	}
+
+	public void setScreenSize(int screenSize) {
+		this.screenSize = screenSize;
+	}
 
 	@Override
 	public String toString() {
-		return "Monitor [id=" + id + ", make=" + make + ", model=" + model + "]";
+		return "Monitor [id=" + id + ", make=" + make + ", model=" + model + ", screenSize=" + screenSize + "]";
 	}
 
 }
