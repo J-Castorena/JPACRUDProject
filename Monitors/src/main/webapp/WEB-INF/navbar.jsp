@@ -6,5 +6,3 @@
 <nav class="navbar navbar-light bg-dark">
     <a id="navHomeButton" class="btn btn-sm btn-outline-light" href="home.do" type="button">HOME</a>
 </nav>
-<br>
-<br>

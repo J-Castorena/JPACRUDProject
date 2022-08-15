@@ -1,14 +1,7 @@
 @charset "UTF-8";
 
 body {
-	background-color: darksalmon;
+	background-color: #D3D3D3;
+	font-family: Optima, sans-serif;
 }
-
-h1 {
-	font-family: cursive;
-}
-
-.navbar navbar-light bg-dark {
-	display: flex;
-	justify-content: right;
-}
+ 

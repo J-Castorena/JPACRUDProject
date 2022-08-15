@@ -12,8 +12,14 @@
 </head>
 <body>
 <main class="container-fluid">
+<div>
 
+<img src="https://i01.appmifile.com/webfile/globalimg/products/pc/mi-23-8-desktop-monitor-1c/overview-3.jpg" class="img-fluid" alt="...">
 
+</div>
+<br>
+<h1 style="text-align:center">Monitor Track App</h1>
+<br>
 <c:choose>
 	<c:when test="${! empty monitors}">
 	
@@ -40,8 +46,8 @@
 					
 					<td>${monitor.screenSize}</td>
 					
-					<td><a href="deleteMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-outline-danger btn-sm">x</a></td>
-					<td><a href="editMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-outline-dark btn-sm">Edit</a></td>
+					<td><a href="deleteMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-danger btn-sm">x</a></td>
+					<td><a href="editMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-primary btn-sm">Edit</a></td>
 					
 				</tr>
 				
