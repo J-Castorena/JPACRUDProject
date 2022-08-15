@@ -27,6 +27,10 @@
     <label for="screenSize"></label>
     <input type="text" name="screenSize" class="form-control" id="screenSize" aria-describedby="emailHelp" placeholder="Monitor SCREEN SIZE:">
   </div>
+  <div class="form-group">
+    <label for="price"></label>
+    <input type="text" name="price" class="form-control" id="price" aria-describedby="emailHelp" placeholder="Monitor PRICE:">
+  </div>
   <br>
   <button type="submit" class="btn btn-secondary">Submit</button>
 </form>

@@ -28,6 +28,10 @@
     <label for="screenSize"></label>
     <input type="text" name="screenSize" class="form-control" id="screenSize" value="${monitor.screenSize}">
   </div>
+  <div class="form-group">
+    <label for="price"></label>
+    <input type="text" name="price" class="form-control" id="price" value="${monitor.price}">
+  </div>
   <br>
   <button type="submit" class="btn btn-secondary">Submit</button>
 </form>

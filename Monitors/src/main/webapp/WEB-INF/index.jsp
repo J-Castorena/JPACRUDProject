@@ -30,6 +30,7 @@
 					<th>Make</th>
 					<th>Model</th>
 					<th>Screen Size</th>
+					<th>Price</th>
 					<th>Delete</th>
 					<th>Edit</th>
 				</tr>
@@ -45,6 +46,8 @@
 					<td>${monitor.model}</td>
 					
 					<td>${monitor.screenSize}</td>
+					
+					<td>${monitor.price}</td>
 					
 					<td><a href="deleteMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-danger btn-sm">x</a></td>
 					<td><a href="editMonitor.do?monitorId=${monitor.id}" type="button" class="btn btn-primary btn-sm">Edit</a></td>

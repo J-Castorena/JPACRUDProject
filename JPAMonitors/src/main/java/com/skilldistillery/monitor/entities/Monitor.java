@@ -19,6 +19,9 @@ public class Monitor {
 	
 	@Column(name="screen_size")
 	private Integer screenSize;
+	
+	private Double price;
+	
 
 	public Monitor() {
 	}
@@ -55,9 +58,18 @@ public class Monitor {
 		this.screenSize = screenSize;
 	}
 
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+
 	@Override
 	public String toString() {
-		return "Monitor [id=" + id + ", make=" + make + ", model=" + model + ", screenSize=" + screenSize + "]";
+		return "Monitor [id=" + id + ", make=" + make + ", model=" + model + ", screenSize=" + screenSize + ", price="
+				+ price + "]";
 	}
 
 }
